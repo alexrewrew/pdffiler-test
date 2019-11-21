@@ -1,0 +1,21 @@
+.fancybox-slide > div
+  width 100%
+  mxwir(1170)
+  +lg()
+    mxwir(960)
+  +md()
+    mxwir(720)
+  +sm()
+    mxwir(540)
+  +xs()
+    clm(max-width, 100%, 30)
+
+.fancybox-close-small
+  &:hover
+    &:after
+      bg($tr)
+  &:focus
+    &:after
+      outline none
+  &:after
+    trans()

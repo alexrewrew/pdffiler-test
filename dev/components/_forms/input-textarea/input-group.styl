@@ -1,0 +1,21 @@
+.input-group
+  position relative
+  mb(15)
+  &__icon
+    position absolute
+    tr(0)
+    rr(0)
+    br(0)
+
+  input, textarea, select
+    mb(0)
+
+  &.select-group
+    .chosen-container
+      mb(0)
+
+    +mob()
+      &:after
+        triangle($bk, down, 4)
+        clm(top, 50%, 2)
+        rr(15)

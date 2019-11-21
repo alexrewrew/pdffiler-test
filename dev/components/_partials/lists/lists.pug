@@ -1,0 +1,10 @@
+mixin ul(array, className)
+    ul(class= className)
+        each val in array
+            li= val
+
+mixin ul-a(array, className)
+    ul(class= className)
+        each val in array
+            li
+                +a(val)

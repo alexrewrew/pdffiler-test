@@ -1,0 +1,15 @@
+blockquote
+  position relative
+  fs(16)
+  &:before, &:after
+    position absolute
+    display block
+    lh(1)
+  &:before
+    content open-quote
+    lr(-10)
+    tr(0)
+  &:after
+    content close-quote
+    rr(-10)
+    br(0)

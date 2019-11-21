@@ -1,0 +1,75 @@
+//  MOBILE
+mob()
+  @media (max-width: 767px)
+    {block}
+
+//  PHONE
+xs()
+  @media (max-width: 567px)
+    {block}
+
+//  PHONE LANDSCAPE
+sm()
+  @media (min-width: 568px) and (max-width 767px)
+    {block}
+
+//  IPHONE X LANDSCAPE
+ix()
+  @media (min-width: 768px) and (max-width 812px) and (orientation : landscape)
+    {block}    
+
+//  TABLET
+pad()
+  @media (min-width: 768px) and (max-width: 1199px)
+    {block}
+
+//  TABLET PORTRAIT AND MOBILE
+mmd()
+  @media (max-width: 991px)
+    {block}    
+
+//  TABLET PORTRAIT
+md()
+  @media (min-width: 768px) and (max-width: 991px)
+    {block}
+
+//  TABLET LANDSCAPE
+lg()
+  @media (min-width: 992px) and (max-width: 1199px)
+    {block}
+
+//  IPAD PRO
+hei()
+  @media (min-height: 1024px) and (max-width: 1366px) and (min-width: 1024px)
+    {block}
+
+//  DISPLAY
+xl()
+  @media (min-width: 1200px)
+    {block}
+
+//  LARGE DISPLAY
+xxl()
+  @media (min-width: 1600px)
+    {block}
+
+//   HOVER ONLY FOR SCREENS
+hov()
+  @media (min-width: 768px)
+    &:hover 
+      {block}    
+
+//  CUSTOM MIN WIDTH
+mmin($minwidth)
+  @media (min-width: $minwidth)
+    {block}
+
+//  CUSTOM MAX WIDTH
+mmax($maxwidth)
+  @media (max-width: $maxwidth)
+    {block}
+
+//  CUSTOM MIN-MAX WIDTH
+media($minwidth, $maxwidth)
+  @media (min-width: $minwidth) and (max-width: $maxwidth)
+    {block}

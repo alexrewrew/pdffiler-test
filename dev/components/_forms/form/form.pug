@@ -1,0 +1,11 @@
+mixin form-footer()
+    form.form-footer
+        .form-inner
+            h6 Напишите нам
+            +input('Введите имя')
+            +input('Ваш E-mail')
+            +textarea('Текст сообщение')
+            button(type='submit').btn Оправить
+            .form_error Отмеченные поля заполненя неверно
+        .form-success
+            h6 Спасибо

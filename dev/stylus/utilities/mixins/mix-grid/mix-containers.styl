@@ -1,0 +1,15 @@
+@import "../../vars/*.styl"
+
+container-init()
+
+  .{$container-name}, .{$container-name}-fluid
+    width: 100%;
+    padding-right: r($column-gutter / 2)
+    padding-left: r($column-gutter / 2)
+    margin-right: auto;
+    margin-left: auto;
+
+  for i in (1..$breakpoints-count)
+    @media (min-width: breakpoints[i]px)
+      .{$container-name}
+        max-width: container-width[i]

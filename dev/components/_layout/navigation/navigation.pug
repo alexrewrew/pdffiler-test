@@ -1,0 +1,17 @@
+mixin navigation()
+
+    nav
+        .container
+            .row
+                .col-6.col-md-2
+                    +nav-logo()
+
+                .col-6.nav-mobile
+                    +nav-icon()
+
+                .col-md-10.nav-panel
+                    ul.menu
+                        +li-a('','').active Google
+                        +li-a('','') Facebook
+
+                           

@@ -1,0 +1,41 @@
+input, textarea, select
+  fca()
+  bg($wt)
+  wi(100%)
+  her(54)
+  bo(1, $gr)
+  border-radius: 0;
+  padding 0 r(15) r(3)
+  mb(15)
+  -webkit-appearance none
+  trans()
+  &:focus
+    outline none
+
+input, textarea
+  +placeholder()
+    co(#999)
+
+input
+  &:-webkit-autofill
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #999 !important
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none;
+  margin: 0;
+
+input[type=number]
+  -moz-appearance: textfield;
+
+label
+  fw(400)
+  fs(16)
+  mb(15)
+
+textarea
+  resize none
+  her(250)
+  mb(15)
+

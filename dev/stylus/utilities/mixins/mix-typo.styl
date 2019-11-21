@@ -1,0 +1,50 @@
+@import "../vars/*.styl"
+
+// FONT
+font($rz = false, $wght = false, $lh = false)
+  if $rz
+    font-size: $rz
+  if $wght
+    fw($wght)
+  if $lh
+    lh($lh)
+
+// FONT-FAMILY
+ff($font)
+  font-family $font, sans-serif
+
+// LINE-HEIGHT
+lh($line-h)
+  line-height $line-h
+
+lhr($line-hr)
+  line-height r($var)
+
+// LETTER-SPACING
+ls($lsr)
+  letter-spacing r($lsr)
+
+//  FONT SIZE
+fs($fontsize)
+  font-size e($fontsize)
+
+//  FONT WEIGHT
+fw($fontweight)
+  font-weight: $fontweight
+
+// TEXT OVERLOW
+to()
+  white-space nowrap
+  overflow hidden
+  text-overflow ellipsis
+
+// PLACEHOLDER
+placeholder()
+  &:-moz-placeholder
+    {block}
+  &::-moz-placeholder
+    {block}
+  &:-ms-input-placeholder
+    {block}
+  &::-webkit-input-placeholder
+    {block}

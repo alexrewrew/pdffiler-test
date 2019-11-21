@@ -1,0 +1,24 @@
+@import "../../vars/*.styl"
+
+flex-init()
+  for i in (0..4)
+    .{flex-properties[0]}-{justify-content-flex-prefixes[i]}
+        justify-content justify-content-properties[i]
+  for j in (0..4)
+    .{flex-properties[1]}-{align-items-self-properties[j]}
+        align-items align-items-self-flex-prefixes[j]
+  for k in (0..4)
+    .{flex-properties[2]}-{align-items-self-properties[k]}
+        align-self align-items-self-flex-prefixes[k]
+
+  for l in (1..$breakpoints-count)
+    @media (min-width: breakpoints[l]px)
+      for m in (1..4)
+        .{flex-properties[0]}-{prefixes[l]}-{justify-content-flex-prefixes[m]}
+          justify-content justify-content-properties[m]
+      for n in (1..4)
+        .{flex-properties[1]}-{prefixes[l]}-{align-items-self-properties[n]}
+          align-items align-items-self-flex-prefixes[n]
+      for p in (1..4)
+        .{flex-properties[2]}-{prefixes[l]}-{align-items-self-properties[p]}
+          align-self align-items-self-flex-prefixes[p]

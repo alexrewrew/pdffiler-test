@@ -1,0 +1,8 @@
+/.idea
+/.vscode
+/src/sketch
+/build
+/node_modules
+/dev/app/js
+/dev/app/css
+#/dev/app/*.html

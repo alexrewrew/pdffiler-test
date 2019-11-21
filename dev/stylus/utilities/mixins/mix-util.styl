@@ -1,0 +1,88 @@
+// DISPLAY FLEX
+df($direction)
+  display flex
+  if $direction == col
+    flex-direction column
+
+dfc($jc, $ai)
+  display flex
+  justify-content $jc
+  align-items $ai
+
+fc()
+  display flex
+  align-items center
+  justify-content center
+
+fca()
+  display flex
+  align-items center
+
+// PSEUDO
+ba()
+  content: ''
+  display: block
+  position: absolute
+
+//  TRANSITIONS
+trans()
+  transition: all .2s ease
+
+// TRIANGLE
+triangle($colour, $direction, $rize)
+  ba()
+  wi(0)
+  he(0)
+  if $direction == down
+    border-left: r($rize) solid transparent
+    border-right: r($rize) solid transparent
+    border-top: r($rize) solid $colour
+  else if $direction == up
+    border-left: r($rize) solid transparent
+    border-right: r($rize) solid transparent
+    border-bottom: r($rize) solid $colour
+  else if $direction == right
+    border-top: r($rize) solid transparent
+    border-bottom: r($rize) solid transparent
+    border-left: r($rize) solid $colour
+  else if $direction == left
+    border-top: r($rize) solid transparent
+    border-bottom: r($rize) solid transparent
+    border-right: r($rize) solid $colour
+
+// COLOR
+co($txtcolor)
+  color $txtcolor
+
+
+// BACKGROUND COLOR
+bg($bgcolor)
+  background-color $bgcolor
+
+dsnone()
+  @keyframes ds-none {
+    0% {
+      opacity: 0;
+    }
+  } 
+
+//animation ds-none .2s both
+
+//  HIDDEN
+hd()
+  opacity 0
+  visibility hidden
+  z-index -1
+
+//  VISIBLE
+vb()
+  opacity 1
+  visibility visible
+  z-index 10
+
+//  COVER IMAGE
+of() 
+  object-fit cover 
+  wi(100%)
+  he(100%)
+//

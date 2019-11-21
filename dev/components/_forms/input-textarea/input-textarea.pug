@@ -1,0 +1,15 @@
+mixin input(placeholder, nameId, className)
+    input(type='text', placeholder= placeholder id= nameId name= nameId class= className)
+
+mixin textarea(placeholder, nameId, className)
+    textarea(placeholder= placeholder id= nameId name= nameId class= className)
+
+
+
+mixin input-group(placeholder, nameId, className)
+    .input-group
+        +input(placeholder, nameId, className)
+
+mixin textarea-group(placeholder, nameId, className)
+    .input-group
+        +textarea(placeholder, nameId, className)

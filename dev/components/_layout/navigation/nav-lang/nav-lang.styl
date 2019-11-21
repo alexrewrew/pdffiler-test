@@ -1,0 +1,30 @@
+.nav-lang
+  position relative
+  cursor pointer
+  &:hover
+    .nav-lang__list
+      vb()
+    &:after
+      transform rotate(180deg)
+  &:after
+    triangle($bk, down, 4)
+    rr(0)
+    clm(top, 50%, 2)
+    trans()
+  &_link
+    pl(10)
+    pr(10)
+    fc()
+
+  &__list
+    position absolute
+    top 100%
+    left 0
+    right 0
+    trans()
+    hd()
+    li
+      a
+        fc()
+        text-transform uppercase
+        text-align center

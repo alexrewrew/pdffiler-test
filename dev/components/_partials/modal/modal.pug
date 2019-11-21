@@ -1,0 +1,7 @@
+mixin modal(id, className)
+    div(id= id style='display: none;' class= className)
+        block
+
+mixin modal-link(text, id, className)
+    a(data-fancybox data-src= id href="javascript:;" class= className)
+        = text

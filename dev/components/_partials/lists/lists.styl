@@ -1,0 +1,38 @@
+ul, ol
+  padding 0
+  margin 0
+  li
+    list-style none
+    position relative
+
+
+ol
+  counter-reset: list1
+  li
+    pl(20)
+    &:before
+      display: block
+      position absolute
+
+      counter-increment: list1
+      content: counter(list1) ". "
+
+      lr(0)
+      tr(0)
+
+      fs(16)
+      fw(500)
+
+      lh(2)
+      co($bk)
+
+.ul-regular
+  li
+    pl(20)
+    &:before
+      ba()
+      width r(8)
+      height r(1)
+      bg($bk)
+      tr(10)
+      lr(0)

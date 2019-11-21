@@ -1,0 +1,21 @@
+mixin slider-swiper()
+    .swiper-container
+        .swiper-wrapper
+            +slider-swiper-slide()
+            +slider-swiper-slide()
+            +slider-swiper-slide()
+            +slider-swiper-slide()
+            +slider-swiper-slide()
+            +slider-swiper-slide()
+            +slider-swiper-slide()
+
+        .swiper-pagination
+
+        .swiper-arrow.left
+            +icon-angle-left
+
+        .swiper-arrow.right
+            +icon-angle-right
+
+mixin slider-swiper-slide()
+    .swiper-slide Slide 1

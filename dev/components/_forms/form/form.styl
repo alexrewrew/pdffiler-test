@@ -1,0 +1,32 @@
+form
+  position relative
+  &.error
+    .form_error
+      vb()
+  &.success
+    .form-inner
+      hd()
+    .form-success
+      vb()
+
+
+.form_error
+  position absolute
+  left 0
+  right 0
+  text-align center
+  bottom -28px
+  co($red)
+  fs(12)
+
+  hd()
+
+
+
+.form-success
+  position absolute
+  top 0
+  left 0
+  right 0
+
+  hd()

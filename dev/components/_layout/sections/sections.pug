@@ -1,0 +1,14 @@
+mixin scr(className)
+    section(class= className)
+        +cr()
+            block
+
+mixin sc(className)
+    section(class= className)
+        .container
+            block
+
+mixin cr()
+    .container
+        .row
+            block

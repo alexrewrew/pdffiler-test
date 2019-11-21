@@ -1,0 +1,29 @@
+//  NON RETINA SCREEN
+retinanon()
+  @media not screen and (-webkit-min-device-pixel-ratio: 2), not screen and (min--moz-device-pixel-ratio: 2), not screen and (-o-min-device-pixel-ratio: 2/1), not screen and (min-device-pixel-ratio: 2), not screen and (min-resolution: 192dpi), not screen and (min-resolution: 2dppx)
+    {block}
+
+//  RETINA SCREEN
+retina()
+  @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min--moz-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx)
+    {block}
+
+//  RETINA SCREEN MAX
+rmmax($width)
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: $width), screen and (min--moz-device-pixel-ratio: 2) and (max-width: $width), screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: $width), screen and (min-device-pixel-ratio: 2) and (max-width: $width), screen and (min-resolution: 192dpi) and (max-width: $width), screen and (min-resolution: 2dppx) and (max-width: $width)
+    {block}
+
+//  RETINA SCREEN MIN
+rmmin($width)
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: $width), screen and (min--moz-device-pixel-ratio: 2) and (min-width: $width), screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: $width), screen and (min-device-pixel-ratio: 2) and (min-width: $width), screen and (min-resolution: 192dpi) and (min-width: $width), screen and (min-resolution: 2dppx) and (min-width: $width)
+    {block}
+
+//  NON RETINA SCREEN MAX
+rnmmax($width)
+  @media not screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: $width), not screen and (min--moz-device-pixel-ratio: 2) and (max-width: $width), not screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: $width), not screen and (min-device-pixel-ratio: 2) and (max-width: $width), not screen and (min-resolution: 192dpi) and (max-width: $width), not screen and (min-resolution: 2dppx) and (max-width: $width)
+    {block}
+
+//  NON RETINA SCREEN MIN
+rnmmin($width)
+  @media not screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: $width), not screen and (min--moz-device-pixel-ratio: 2) and (min-width: $width), not screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: $width), not screen and (min-device-pixel-ratio: 2) and (min-width: $width), not screen and (min-resolution: 192dpi) and (min-width: $width), screen and (min-resolution: 2dppx) and (min-width: $width)
+    {block}

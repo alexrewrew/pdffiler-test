@@ -1,0 +1,114 @@
+extend templates/_template.pug
+
+block title
+    | Главная страница
+
+block content
+
+    +scr()
+        .col-12
+            +slider-slick()
+
+    //section
+    //    .d-grid
+    //        h1 MilkIsNice oh yeah!
+    //        p Scroll down
+    //
+    //section
+    //    .grid-12.project.project-left
+    //        .box
+    //            img(src='https://source.unsplash.com/71vAb1FXB6g')
+    //            .overlay
+    //        .project-info
+    //            p.small-title Identity // Website // Print
+    //            h4 This is the first project
+    //            +a('project-link', '') See case study
+
+    //+scr()
+        .col-6
+            h1 Header 1
+            h2 Header 2
+            h3 Header 3
+            h4 Header 4
+            h5 Header 5
+            h6 Header 6
+
+        .col-6
+            p paragraph
+            p
+                +a('link')
+            p
+                em italic
+                | &nbsp
+                i italic
+            p
+                b bold
+                | &nbsp
+                strong bold
+
+            hr
+
+            blockquote
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad atque esse expedita nam numquam optio, soluta? Aperiam, explicabo iusto! Ducimus eius, eligendi eveniet harum iure modi non numquam quaerat!
+
+        .col-3
+            ul
+                li list
+                li list
+                li list
+
+            ul.ul-regular
+                li list
+                li list
+                li list
+
+            ol
+                li list
+                li list
+                li list
+
+        .col-3
+            +input-group('input')
+
+            +select-group()
+
+            .input-group
+                +datepicker('date')
+
+            +textarea-group('textarea')
+
+        .col-3
+            +input('input')
+
+            +select()
+
+            +textarea('textarea')
+
+
+        .col-3
+            +radiocheck('checkbox', 'lorem')
+            +radiocheck('checkbox', 'lorem')
+            br
+            +radiocheck('radio', 'lorem')
+            +radiocheck('radio', 'lorem')
+
+        .col-3
+            +select-chosen()
+            +select-select2()
+        .col-3
+            +datepicker('Выберите дату')
+
+            +modal-link('open', '#my-modal', 'btn btn-text-center')
+        .col-12
+            +accordion()
+        .col-12
+            +tabs()
+
+    +modal('my-modal')
+        p 123
+        p 456
+
+
+
+
+

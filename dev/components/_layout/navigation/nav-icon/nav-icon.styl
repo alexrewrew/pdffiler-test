@@ -1,0 +1,45 @@
+.nav-icon
+  wir(30)
+  her(22)
+  position relative
+  margin r(14) 0
+  cursor pointer
+  transform rotate(0deg)
+  float right
+  trans()
+  span
+    display block
+    position absolute
+    her(3)
+    wi(100%)
+    bg($bk)
+    border-radius r(2)
+    opacity 1
+    lr(0)
+    transform rotate(0deg)
+    trans()
+    &:nth-child(1)
+      tr(0)
+    &:nth-child(2), &:nth-child(3)
+      tr(9)
+    &:nth-child(4)
+      tr(18)
+
+body.open 
+  .nav-icon
+        span
+          &:nth-child(1)
+            tr(18)
+            wi(0)
+            left 50%
+
+          &:nth-child(2)
+            transform rotate(45deg)
+
+          &:nth-child(3)
+            transform rotate(-45deg)
+
+          &:nth-child(4)
+            tr(18)
+            wi(0)
+            left 50%      

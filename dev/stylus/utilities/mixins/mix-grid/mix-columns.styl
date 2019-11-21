@@ -1,0 +1,74 @@
+@import "../../vars/*.styl"
+
+column-init($col = $column-number + 2)
+  $grid-column
+    position: relative;
+    width: 100%;
+    min-height: r(1) // Prevent columns from collapsing when empty
+    padding-right: r($column-gutter / 2)
+    padding-left: r($column-gutter / 2)
+
+  for l in (1..$column-number)
+    .{$col-name},
+    .{$col-name}-auto,
+    .{$col-name}-{prefixes[l]},
+    .{$col-name}-{prefixes[l]}-auto,
+    .{$col-name}-{l}
+      @extend $grid-column
+    for m in (1..$breakpoints-count)
+      .{$col-name}-{prefixes[m]}-{l}
+        @extend $grid-column
+
+
+column-generator($col = $column-number)
+  for i in (0..$breakpoints-count)
+    if (i == 0)
+      for j in (1..$col + 2)
+        if (j == $col + 1)
+          .{$col-name}
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+        else if (j == $col + 2)
+          .{$col-name}-auto
+            flex: 0 0 auto;
+            width: auto;
+            max-width: none;
+        else
+          .{$col-name}-{j}
+            flex 0 0 ((100 / $col) * j) %
+            max-width ((100 / $col) * j) %
+
+      for k in (1..$col)
+        .order-{k}
+          order k
+
+      for n in (0..$col)
+        .offset-{n}
+          margin-left ((100 / $col) * n)%
+
+    else
+      @media (min-width: breakpoints[i]px)
+        for j in (1..$col + 2)
+          if (j == $col + 1)
+            .{$col-name}-{prefixes[i]}
+              flex-basis: 0;
+              flex-grow: 1;
+              max-width: 100%;
+          else if (j == $col + 2)
+              .{$col-name}-{prefixes[i]}-auto
+                flex: 0 0 auto;
+                width: auto;
+                max-width: none;
+          else
+            .{$col-name}-{prefixes[i]}-{j}
+              flex 0 0 ((100 / $col) * j) %
+              max-width ((100 / $col) * j) %
+
+        for k in (1..$col)
+          .order-{prefixes[i]}-{k}
+            order k
+
+        for n in (0..$col)
+          .offset-{prefixes[i]}-{n}
+            margin-left ((100 / $col) * n)%

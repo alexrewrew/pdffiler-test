@@ -1,0 +1,34 @@
+.swiper
+
+  &-container
+    width: 100%;
+    height: 100%;
+
+  &-slide
+    text-align: center;
+    fs(18)
+    bg($wt)
+    fc()
+    her(300)
+
+  &-arrow
+    position absolute
+    z-index 100
+    her(50)
+    wir(50)
+    clm(top, 50%, 25)
+    cursor pointer
+    fs(50)
+    co($gr)
+    fc()
+    trans()
+    &:hover
+      co(blue)
+    &.left
+      lr(0)
+    &.right
+      rr(0)
+
+  &-pagination
+    fs(16)
+    fw(700)

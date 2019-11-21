@@ -1,0 +1,213 @@
+//  EM SIZES
+r(n)
+  (n * ( 1 / $base-font-size ))rem
+
+rmi(n)
+  -((n * ( 1 / $base-font-size )))rem
+
+//  EM SIZES
+e(n)
+  (n * ( 1 / $base-font-size ))em
+
+emi(n)
+  -((n * ( 1 / $base-font-size )))em
+
+//  PADDINGS
+
+pp($top, $right, $bottom, $left)
+  padding r($top) r($right) r($bottom) r($left)
+
+pt($sz)
+  if $sz == 0
+    padding-top 0
+  else
+    padding-top r($sz)
+
+pr($sz)
+  if $sz == 0
+    padding-right 0
+  else
+    padding-right r($sz)
+
+pb($sz)
+  if $sz == 0
+    padding-bottom 0
+  else
+    padding-bottom r($sz)
+
+pl($sz)
+  if $sz == 0
+    padding-left 0
+  else
+    padding-left r($sz)
+
+//  MARGINS
+
+mc()
+  margin-left auto
+  margin-right auto
+
+mm($top, $right, $bottom, $left)
+  margin r($top) r($right) r($bottom) r($left)
+
+mt($sz)
+  if $sz == 0
+    margin-top 0
+  else
+    margin-top r($sz)
+
+mr($sz)
+  if $sz == 0
+    margin-right 0
+  else
+    margin-right r($sz)
+
+mb($sz)
+  if $sz == 0
+    margin-bottom 0
+  else
+    margin-bottom r($sz)
+
+ml($sz)
+  if $sz == 0
+    margin-left 0
+  else
+    margin-left r($sz)
+
+
+//  MARGINS MINUS
+
+mtm($sz)
+  margin-top rmi($sz)
+
+mrm($sz)
+  margin-right rmi($sz)
+
+mbm($sz)
+  margin-bottom rmi($sz)
+
+mlm($sz)
+  margin-left rmi($sz)
+
+
+
+//FLEX
+
+fl($sz)
+  flex 0 0 $sz
+  max-width $sz
+
+
+//FLEX REM
+
+flr($sz)
+  flex 0 0 r($sz)
+  max-width r($sz)
+
+
+
+//  SIZES
+wi($wr)
+  width $wr
+
+he($hr)
+  height $hr
+
+
+//  SIZES REM
+
+wir($wr)
+  width r($wr)
+
+her($hr)
+  height r($hr)
+
+
+//MIN-MAX WIDTH HEIGHT
+
+mxwi($maxwr)
+  max-width $maxwr
+
+mxhe($maxhr)
+  max-height: $maxhr
+
+mnwi($minwr)
+  min-width: $minwr
+
+mnhe($minhr)
+  min-height: $minhr
+
+
+//MIN-MAX WIDTH HEIGHT REM
+
+mxwir($maxwr)
+  max-width r($maxwr)
+
+mxher($maxhr)
+  max-height: r($maxhr)
+
+mnwir($minwr)
+  min-width: r($minwr)
+
+mnher($minhr)
+  min-height: r($minhr)
+
+//  POSITION
+tr($sz)
+  if $sz == 0
+    top 0
+  else
+    top r($sz)
+
+lr($sz)
+  if $sz == 0
+    left 0
+  else
+    left r($sz)
+
+rr($sz)
+  if $sz == 0
+    right 0
+  else
+    right r($sz)
+
+br($sz)
+  if $sz == 0
+    bottom 0
+  else
+    bottom r($sz)
+
+trm($sz)
+  top rmi($sz)
+
+lrm($sz)
+  left rmi($sz)
+
+rrm($sz)
+  right rmi($sz)
+
+brm($sz)
+  bottom rmi($sz)
+
+cl($property, $measure, $number)
+  measure = $measure
+  number = r($number)
+  {$property} "calc(%s + %s)" % (measure number)
+
+clm($property, $measure, $number)
+  measure = $measure
+  number = r($number)
+  {$property} "calc(%s - %s)" % (measure number)
+
+//BORDERS
+bo($sz, $co)
+  border r($sz) solid $co
+
+bot($sz, $co)
+  border-top r($sz) solid $co
+bor($sz, $co)
+  border-right r($sz) solid $co
+bol($sz, $co)
+  border-left r($sz) solid $co
+bob($sz, $co)
+  border-bottom r($sz) solid $co

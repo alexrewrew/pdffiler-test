@@ -1,0 +1,9 @@
+mixin li-a(className, href)
+    li
+        +a(className, href)
+            block
+
+
+mixin a(className, href)
+    a(href= href title='' class= className)
+        block
