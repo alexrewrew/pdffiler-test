@@ -34,12 +34,12 @@
     "imagemin-guetzli": "^2.0.0"
   },
   "devDependencies": {
-    "@fancyapps/fancybox": "^3.5.7",
     "bowser": "^2.7.0",
+    "chosen-js": "^1.8.7",
     "html5shiv": "^3.7.3",
     "jquery": "^3.4.1",
+    "jquery-validation": "^1.19.1",
     "jquery.maskedinput": "^1.4.1",
-    "respond.js": "^1.4.2",
-    "slick-carousel": "^1.8.1"
+    "respond.js": "^1.4.2"
   }
 }

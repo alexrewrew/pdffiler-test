@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('../fonts/ArialArialNarrow-Italic.eot');
+    src: url('../fonts/ArialArialNarrow-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArialArialNarrow-Italic.woff2') format('woff2'),
+        url('../fonts/ArialArialNarrow-Italic.woff') format('woff'),
+        url('../fonts/ArialArialNarrow-Italic.ttf') format('truetype'),
+        url('../fonts/ArialArialNarrow-Italic.svg#ArialNarrow-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/ArialArial-BoldMT.eot');
+    src: url('../fonts/ArialArial-BoldMT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArialArial-BoldMT.woff2') format('woff2'),
+        url('../fonts/ArialArial-BoldMT.woff') format('woff'),
+        url('../fonts/ArialArial-BoldMT.ttf') format('truetype'),
+        url('../fonts/ArialArial-BoldMT.svg#Arial-BoldMT') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('../fonts/ArialArialNarrow-Bold.eot');
+    src: url('../fonts/ArialArialNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArialArialNarrow-Bold.woff2') format('woff2'),
+        url('../fonts/ArialArialNarrow-Bold.woff') format('woff'),
+        url('../fonts/ArialArialNarrow-Bold.ttf') format('truetype'),
+        url('../fonts/ArialArialNarrow-Bold.svg#ArialNarrow-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/ArialArial-Black.eot');
+    src: url('../fonts/ArialArial-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArialArial-Black.woff2') format('woff2'),
+        url('../fonts/ArialArial-Black.woff') format('woff'),
+        url('../fonts/ArialArial-Black.ttf') format('truetype'),
+        url('../fonts/ArialArial-Black.svg#Arial-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/ArialArial-ItalicMT.eot');
+    src: url('../fonts/ArialArial-ItalicMT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArialArial-ItalicMT.woff2') format('woff2'),
+        url('../fonts/ArialArial-ItalicMT.woff') format('woff'),
+        url('../fonts/ArialArial-ItalicMT.ttf') format('truetype'),
+        url('../fonts/ArialArial-ItalicMT.svg#Arial-ItalicMT') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/ArialArialMT.eot');
+    src: url('../fonts/ArialArialMT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArialArialMT.woff2') format('woff2'),
+        url('../fonts/ArialArialMT.woff') format('woff'),
+        url('../fonts/ArialArialMT.ttf') format('truetype'),
+        url('../fonts/ArialArialMT.svg#ArialMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/ArialArial-BoldItalicMT.eot');
+    src: url('../fonts/ArialArial-BoldItalicMT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArialArial-BoldItalicMT.woff2') format('woff2'),
+        url('../fonts/ArialArial-BoldItalicMT.woff') format('woff'),
+        url('../fonts/ArialArial-BoldItalicMT.ttf') format('truetype'),
+        url('../fonts/ArialArial-BoldItalicMT.svg#Arial-BoldItalicMT') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('../fonts/ArialArialNarrow-BoldItalic.eot');
+    src: url('../fonts/ArialArialNarrow-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArialArialNarrow-BoldItalic.woff2') format('woff2'),
+        url('../fonts/ArialArialNarrow-BoldItalic.woff') format('woff'),
+        url('../fonts/ArialArialNarrow-BoldItalic.ttf') format('truetype'),
+        url('../fonts/ArialArialNarrow-BoldItalic.svg#ArialNarrow-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('../fonts/ArialArialNarrow.eot');
+    src: url('../fonts/ArialArialNarrow.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ArialArialNarrow.woff2') format('woff2'),
+        url('../fonts/ArialArialNarrow.woff') format('woff'),
+        url('../fonts/ArialArialNarrow.ttf') format('truetype'),
+        url('../fonts/ArialArialNarrow.svg#ArialNarrow') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
