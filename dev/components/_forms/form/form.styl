@@ -1,32 +1,174 @@
-form
-  position relative
-  &.error
-    .form_error
-      vb()
-  &.success
-    .form-inner
-      hd()
-    .form-success
-      vb()
+.form-payment
+  +lg()
+    padding 0 r(82) 0 r(75)
+
+  +xl()
+      display flex
+      padding 0 r(45) 0 r(35)
+
+  &__wrapper-top, &__wrapper-bottom
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    position relative
+    +lg()
+      justify-content flex-end
+  &__wrapper-bottom
+    +xl()
+      flr(343)
+      ml(30)
+      position relative
 
 
-.form_error
-  position absolute
-  left 0
-  right 0
-  text-align center
-  bottom -28px
-  co($red)
-  fs(12)
+.form-block
+  fl(100%)
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  mb(13)
 
-  hd()
+  +lg()
+    justify-content flex-end
+    align-items center
+    mb(20)
+
+  label
+    fl(100%)
+    +lg()
+      flex 0 0 auto
+      max-width unset
+      mb(0)
+
+  .input-group
+    fl(100%)
+    +lg()
+      ml(15)
+      flr(162)
+
+  &.form-block-banks
+    fc()
+    mb(21)
+    fl(100%)
+    +lg()
+      //ml(15)
+      flr(180)
+      margin 0 rmi(8) r(20)
+
+    img
+      display block
+      margin 0 r(10)
+      her(30)
+      +lg()
+        margin 0 r(2.5)
+        her(27)
+
+  &.form-block-cardholder
+    +lg()
+      order -1
+    +xl()
+      flex 0 0 auto
+      max-width unset
+
+    .input-group
+      gutter = r(5)
+      flex 0 0 "calc(50% - %s)" % gutter
+      max-width "calc(50% - %s)" % gutter
+      +lg()
+        flr(162)
+
+
+  &.form-block-cardnunmber
+    +lg()
+      order -1
+      flex 0 0 auto
+      max-width unset
+      mr(13)
 
 
 
-.form-success
-  position absolute
-  top 0
-  left 0
-  right 0
+  &.form-block-expdate
+    gutter = r(10)
+    flex 0 0 "calc(60% - %s)" % gutter
+    max-width "calc(60% - %s)" % gutter
+    align-items center
+    justify-content space-between
+    +lg()
+      justify-content flex-end
+      gutter = r(15)
+      flex 0 0 "calc(65% - %s)" % gutter
+      max-width "calc(65% - %s)" % gutter
 
-  hd()
+    label
+      +lg()
+        mr(15)
+    span
+      +lg()
+        margin 0 r(8)
+
+  &.form-block-cvv
+    gutter = r(10)
+    flex 0 0 "calc(40% - %s)" % gutter
+    max-width "calc(40% - %s)" % gutter
+    +lg()
+      flr(165)
+      ml(12)
+    .input-group
+      +lg()
+        flr(85)
+
+  &.form-block-zipcode
+    +lg()
+      pr(177)
+    +xl()
+      mb(62)
+
+  &.form-block-paypal
+    fl(100%)
+    fca()
+    justify-content space-between
+    flex-wrap wrap
+    border-radius: r(6)
+    border: solid 1px $borders2;
+    background-color: $gray;
+    padding 0 r(16) r(1)
+    margin r(7) 0 r(20)
+    her(62)
+    +lg()
+      flr(339)
+      mt(0)
+      her(68)
+      padding 0 r(14) r(1) r(17)
+    +xl()
+      fl(100%)
+      height 100%
+      justify-content center
+      align-content center
+      pb(48)
+    span
+      fs(14)
+      line-height 1
+      +lg()
+        fs(16)
+      +xl()
+        fs(18)
+        fl(100%)
+        text-align center
+        mb(30)
+
+    a
+      display block
+      mxwir(100)
+      +xl()
+        mxwir(137)
+      &:hover
+        opacity .6
+      img
+        width 100%
+
+  &.form-block-button
+    +xl()
+      position absolute
+      wir(339)
+      br(0)
+      cl(right, 100%, 30)
+      mb(0)

@@ -1,21 +1,88 @@
 .input-group
   position relative
-  mb(15)
   &__icon
     position absolute
-    tr(0)
-    rr(0)
-    br(0)
+    br(6)
+    rr(10)
+    cursor pointer
+  &__tooltip
+    position absolute
+    box-shadow $shadow4
+    bg($wt)
+    display flex
+    br(35)
+    border-radius r(3)
+    rrm(5)
+    bo(1,$borders)
+    trans()
+    hd()
 
-  input, textarea, select
+    &:before, &:after
+      ba()
+      width: 0;
+      height: 0;
+      transform-origin: 0 0;
+      transform: rotate(-45deg);
+      rr(15)
+
+    &:after
+      brm(15);
+      border: r(8) solid $wt;
+      border-color: transparent transparent $wt $wt;
+
+    &:before
+      brm(16);
+      border: r(8) solid $borders;
+      border-color: transparent transparent $borders $borders;
+      box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    &.visible
+      vb()
+
+    b
+      display block
+    img
+      her(67)
+      mb(16)
+    &__left, &__right
+      padding r(20)
+    &__left
+      position relative
+      pr(15)
+      &:after
+        ba()
+        tr(20)
+        br(20)
+        rrm(1)
+        bg(#ddd)
+        wir(1)
+    &__right
+      pl(16)
+
+.select-group
+  position relative
+  &-month
+    fl(39%)
+    +lg()
+      flr(64)
+
+  &-year
+    fl(48%)
+    +lg()
+      flr(77)
+
+  .chosen-container
     mb(0)
 
-  &.select-group
-    .chosen-container
-      mb(0)
-
-    +mob()
-      &:after
-        triangle($bk, down, 4)
-        clm(top, 50%, 2)
-        rr(15)
+  &:before, &:after
+    ba()
+    tr(14)
+    wir(7)
+    her(3)
+    bg($black)
+    pointer-events none
+  &:before
+    transform rotate(45deg)
+    rr(13)
+  &:after
+    transform rotate(-45deg)
+    rr(10)

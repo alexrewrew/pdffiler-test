@@ -30,16 +30,14 @@
     "gulp-strip-comments": "^2.5.2",
     "gulp-stylus": "^2.7.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-zip": "^5.0.1",
-    "imagemin-guetzli": "^2.0.0"
+    "gulp-zip": "^5.0.1"
   },
   "devDependencies": {
     "bowser": "^2.7.0",
-    "chosen-js": "^1.8.7",
     "html5shiv": "^3.7.3",
     "jquery": "^3.4.1",
+    "jquery-mask-plugin": "^1.14.16",
     "jquery-validation": "^1.19.1",
-    "jquery.maskedinput": "^1.4.1",
     "respond.js": "^1.4.2"
   }
 }

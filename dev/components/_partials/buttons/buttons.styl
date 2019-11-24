@@ -6,14 +6,38 @@ button
     outline none
 
 .btn
-  fca()
-  her(54)
-
-  mxwir(320)
+  fc()
+  her(42)
+  fs(14)
+  fw(700)
   wi(100%)
 
-  padding 0 r(15) r(3)
-  &:hover {}
+  padding 0 r(5) r(3)
+
+  border-radius: r(3)
+  bo(1,$orange)
+  bg($wt)
+  co($wt)
+  position relative
+  z-index 10
+  +lg()
+    mxwir(339)
+  &:after
+    ba()
+    background-image: $gradient
+    background-blend-mode: soft-light, normal;
+    trans()
+    top 0
+    left 0
+    right 0
+    bottom 0
+    z-index -1
+
+  &:hover
+    background $wt
+    co($orange)
+    &:after
+      opacity 0
 
 .btn-center
   mc(0)

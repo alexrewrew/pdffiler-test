@@ -19,7 +19,6 @@ global.$ = {
     babel : require('gulp-babel'),
     fs : require('fs'),
     realFavicon : require ('gulp-real-favicon'),
-    imageminGuetzli : require('imagemin-guetzli'),
     FAVICON_DATA_FILE : 'faviconData.json',
 
     zip : require('gulp-zip'),
@@ -57,13 +56,13 @@ $.gulp.task('noui', $.gulp.series(
 $.gulp.task('build', $.gulp.series(
     'clean',
     $.gulp.parallel('pug', 'stylus', 'scripts:lib', 'scripts'),
-    $.gulp.parallel('pug:build', 'stylus:build', 'scripts:build', 'imagemin:build', 'fonts:copy', 'media:copy', 'php:copy'),
+    $.gulp.parallel('pug:build', 'stylus:build', 'scripts:build', 'imagemin:build', 'fonts:copy'),
     $.gulp.parallel('zip:build')
 ));
 
 $.gulp.task('build:back', $.gulp.series(
     'clean',
     $.gulp.parallel('stylus', 'scripts:lib', 'scripts'),
-    $.gulp.parallel('stylus:build', 'scripts:build', 'imagemin:build', 'fonts:copy', 'media:copy', 'php:copy'),
+    $.gulp.parallel('stylus:build', 'scripts:build', 'imagemin:build', 'fonts:copy'),
     $.gulp.parallel('zip:build')
 ));

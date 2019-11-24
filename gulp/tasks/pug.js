@@ -14,9 +14,9 @@ module.exports = function () {
 
     $.gulp.task('pug:build', function () {
         return $.gulp.src('dev/app/*.html')
-            // .pipe($.htmlmin({
-            //     collapseWhitespace: true
-            // }))
+            .pipe($.htmlmin({
+                collapseWhitespace: true
+            }))
             .pipe($.gulp.dest('build'));
     });
 };

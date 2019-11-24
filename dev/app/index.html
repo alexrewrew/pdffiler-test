@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
     <!-- meta tags-->
     <meta charset="utf-8"/>
@@ -28,7 +28,7 @@
     <meta name="twitter:image:src" content="img/ogp/OGP_Twitter.png"/>
     <meta name="twitter:description" content=""/>
     <!-- title-->
-    <title>Главная страница
+    <title>PDFfiller - Test
     </title>
     <!-- favicon-->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png"/>
@@ -52,139 +52,108 @@
     <!-- style-->
     <link rel="stylesheet" type="text/css" href="css/vendor.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <!--script(src='js/lottie.js')-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script><!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script><![endif]-->
   </head>
   <body>
-    <!--+preloader()-->
-    <!--+preloader-lottie()-->
-    <!--+navigation()-->
     <main>
-      <!--+header()-->
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="slider-slick">
-                <div>
-                  <div class="slider-slick__slide">123</div>
+      <div class="container">
+        <h1>Thank you for choosing to subscribe to PDFfiller services!</h1>
+        <form class="form-payment" id="formPayment" method="POST" action="">
+          <div class="form-payment__wrapper-top">
+            <div class="form-block form-block-banks"><img src="img/banks/visa.svg" title="" alt=""/><img src="img/banks/mastercard.svg" title="" alt=""/><img src="img/banks/discover.svg" title="" alt=""/><img src="img/banks/aexpress.svg" title="" alt=""/>
+            </div>
+            <div class="form-block form-block-cardholder">
+              <label for="firstName">Cardholder Name</label>
+              <div class="input-group">
+                <input type="text" placeholder="First Name" id="firstName" name="firstName">
+              </div>
+              <div class="input-group">
+                <input type="text" placeholder="Last Name" id="lastName" name="lastName">
+              </div>
+            </div>
+            <div class="form-block form-block-cardnunmber">
+              <label for="cardNumber">Card Number</label>
+              <div class="input-group">
+                <input placeholder="⦁⦁⦁⦁ ⦁⦁⦁⦁ ⦁⦁⦁⦁ ⦁⦁⦁⦁" maxlength="16" id="cardNumber" name="cardNumber">
+              </div>
+            </div>
+            <div class="form-block form-block-expdate">
+              <label for="expDateMonth">Exp. Date</label>
+              <div class="select-group select-group-month">
+                <select id="expDateMonth" name="expDateMonth">
+                  <option disabled="" selected="">MM</option>
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option>09</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div><span>/</span>
+              <div class="select-group select-group-year">
+                <select id="expDateYear" name="expDateYear">
+                  <option disabled="" selected="">YYYY</option>
+                  <option>2020</option>
+                  <option>2021</option>
+                  <option>2022</option>
+                  <option>2023</option>
+                  <option>2024</option>
+                  <option>2025</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-block form-block-cvv">
+              <label for="cvv">CVV/CVC</label>
+              <div class="input-group">
+                <input type="password" placeholder="XXXX" id="cvv" name="cvv" maxlength="4">
+                <div class="input-group__icon"><svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-665.000000, -213.000000)" fill="#278AE2">
+            <g transform="translate(220.000000, 41.000000)">
+                <g transform="translate(0.000000, 58.000000)">
+                    <path d="M451,114 C447.69175,114 445,116.69175 445,120 C445,123.30825 447.69175,126 451,126 C454.30825,126 457,123.30825 457,120 C457,116.69175 454.30825,114 451,114 L451,114 Z M451,124.5 C448.51825,124.5 446.5,122.48175 446.5,120 C446.5,117.51825 448.51825,115.5 451,115.5 C453.48175,115.5 455.5,117.51825 455.5,120 C455.5,122.48175 453.48175,124.5 451,124.5 L451,124.5 Z M451,121.5 C451.41475,121.5 451.75,121.83525 451.75,122.25 C451.75,122.66475 451.41475,123 451,123 C450.586,123 450.25,122.66475 450.25,122.25 C450.25,121.83525 450.586,121.5 451,121.5 L451,121.5 Z M452.9065,117.72225 C452.824,117.6315 452.46025,117.345 452.317,117.27975 C452.17375,117.2145 451.7635,117.08775 451.40575,116.99925 C451.40575,116.99925 451.40575,116.99925 450.973,116.99925 L450.63775,116.99925 C450.32125,117.0825 449.6965,117.32475 449.5795,117.41325 C449.4625,117.50175 449.1175,117.858 449.047,117.984 C448.978,118.11 448.79875,118.638 448.7815,118.8555 C448.76425,119.073 449.0875,119.25 449.5,119.25 C449.9125,119.25 450.25,118.9665 450.25,118.80075 C450.25,118.635 450.29425,118.35 450.3025,118.32375 C450.31075,118.2975 450.4435,118.14975 450.5035,118.113 C450.5635,118.07625 450.72925,118.00725 450.87175,117.95925 L451.03525,117.95925 L451.27975,117.95925 C451.45975,118.059 451.7605,118.359 451.77925,118.479 C451.798,118.599 451.798,118.896 451.77175,118.9575 C451.747,119.019 451.62025,119.20575 451.5685,119.25375 C451.51675,119.301 451.31875,119.4585 451.25425,119.5035 C451.18975,119.5485 450.964,119.715 450.90175,119.772 C450.84025,119.82975 450.64,120.0555 450.59125,120.1365 C450.5425,120.2175 450.38125,120.5115 450.33475,120.59625 C450.28825,120.681 450.5875,120.75 451,120.75 C451.4125,120.75 451.77175,120.5715 451.76875,120.5535 C451.76575,120.5355 451.909,120.3705 451.972,120.321 C452.03575,120.2715 452.26825,120.10725 452.3425,120.06075 C452.41675,120.01425 452.66725,119.841 452.73175,119.7795 C452.79775,119.718 453.0025,119.4765 453.04975,119.39025 C453.097,119.304 453.16,119.14575 453.1915,119.04 C453.223,118.93425 453.223,118.347 453.1915,118.24875 C453.16,118.1505 452.989,117.813 452.9065,117.72225 L452.9065,117.72225 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
                 </div>
-                <div>
-                  <div class="slider-slick__slide">123</div>
-                </div>
-                <div>
-                  <div class="slider-slick__slide">123</div>
+                <div class="input-group__tooltip">
+                  <div class="input-group__tooltip__left"><img src="img/banks/card-visa.svg" title="" alt=""/>
+                    <p><b>Visa, MasterCard</b>3-Digit Verification Number</p>
+                  </div>
+                  <div class="input-group__tooltip__right"><img src="img/banks/card-express.svg" title="" alt=""/>
+                    <p><b>American Express</b>4-Digit Verification Number</p>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="form-block form-block-zipcode">
+              <label for="zipCode">Zip/Postal Code</label>
+              <div class="input-group">
+                <input placeholder="01001" id="zipCode" name="zipCode" maxlength="5">
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-      <!--section-->
-      <!--    .d-grid-->
-      <!--        h1 MilkIsNice oh yeah!-->
-      <!--        p Scroll down-->
-      <!---->
-      <!--section-->
-      <!--    .grid-12.project.project-left-->
-      <!--        .box-->
-      <!--            img(src='https://source.unsplash.com/71vAb1FXB6g')-->
-      <!--            .overlay-->
-      <!--        .project-info-->
-      <!--            p.small-title Identity // Website // Print-->
-      <!--            h4 This is the first project-->
-      <!--            +a('project-link', '') See case study-->
-      <!--+scr()
-      .col-6
-          h1 Header 1
-          h2 Header 2
-          h3 Header 3
-          h4 Header 4
-          h5 Header 5
-          h6 Header 6
-      
-      .col-6
-          p paragraph
-          p
-              +a('link')
-          p
-              em italic
-              | &nbsp
-              i italic
-          p
-              b bold
-              | &nbsp
-              strong bold
-      
-          hr
-      
-          blockquote
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad atque esse expedita nam numquam optio, soluta? Aperiam, explicabo iusto! Ducimus eius, eligendi eveniet harum iure modi non numquam quaerat!
-      
-      .col-3
-          ul
-              li list
-              li list
-              li list
-      
-          ul.ul-regular
-              li list
-              li list
-              li list
-      
-          ol
-              li list
-              li list
-              li list
-      
-      .col-3
-          +input-group('input')
-      
-          +select-group()
-      
-          .input-group
-              +datepicker('date')
-      
-          +textarea-group('textarea')
-      
-      .col-3
-          +input('input')
-      
-          +select()
-      
-          +textarea('textarea')
-      
-      
-      .col-3
-          +radiocheck('checkbox', 'lorem')
-          +radiocheck('checkbox', 'lorem')
-          br
-          +radiocheck('radio', 'lorem')
-          +radiocheck('radio', 'lorem')
-      
-      .col-3
-          +select-chosen()
-          +select-select2()
-      .col-3
-          +datepicker('Выберите дату')
-      
-          +modal-link('open', '#my-modal', 'btn btn-text-center')
-      .col-12
-          +accordion()
-      .col-12
-          +tabs()
-      
-      -->
-      <div id="my-modal" style="display: none;">
-        <p>123</p>
-        <p>456</p>
+          <div class="form-payment__wrapper-bottom">
+            <div class="form-block form-block-paypal"><span>Or pay with Paypal</span><a href="" title=""><img src="img/banks/paypal.png" title="" alt=""/></a>
+            </div>
+            <div class="form-block form-block-button">
+              <button class="btn" type="submit">Start My Subscription for $19.99/mo.</button>
+            </div>
+          </div>
+        </form>
       </div>
-      <!--+footer()-->
     </main>
     <script src="js/vendor.js"></script>
-    <!--script(src="js/nouislider.js")-->
     <script src="js/scripts.js"></script>
   </body>
 </html>

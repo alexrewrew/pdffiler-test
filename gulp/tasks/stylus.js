@@ -26,7 +26,7 @@ module.exports = function () {
         return $.gulp.src('dev/app/css/*.css')
             .pipe($.sourcemaps.init())
 
-            // .pipe($.minify())
+            .pipe($.minify())
             .pipe($.strip.text())
 
             .pipe($.sourcemaps.write())
